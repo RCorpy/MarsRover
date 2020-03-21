@@ -1,0 +1,22 @@
+:root{
+    --amount:-90deg;
+    --x-mov:-150px;
+    --y-mov:-150px;
+}
+#contenedor{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#contenedor-imagen img {
+    position: absolute;
+    left:var(--x-mov);
+    top:var(--y-mov);
+    border: 5px solid #eee;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transform: rotate(var(--amount));
+    }
+
